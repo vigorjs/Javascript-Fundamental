@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Switchcase</title>
+</head>
+<body>
+    <script>
+        var pilihan = prompt("Pilih angka 1-4", 0)
+        var hadiah = ""
+        switch(pilihan){
+            case "1" : hadiah = "Mobil Pajero"; break;
+            case "2" : hadiah = "Umroh"; break;
+            case "3" : hadiah = "Sepeda Motor"; break;
+            case "4" : hadiah = "Zonk"; break;
+            default : document.write("Anda Salah pilih, ")
+        }
+        
+        if(hadiah == "") {
+            document.write("Kamu gagal mendapatkan hadiah")
+        }else {
+            document.write("Selamat Anda mendapatkan " + hadiah)
+        }
+    </script>
+</body>
+</html>

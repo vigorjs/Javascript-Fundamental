@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan IF</title>
+</head>
+<body>
+    <script>
+        var kasir = prompt('Total Belanja?', 0)
+
+        if(kasir >= 100000 && kasir <= 200000){
+            document.write("<h1>Total Belanja anda : Rp."+ kasir +"<br>Selamat anda mendapatkan Diskon 50%</h1>")
+        } else if(kasir > 200000){
+            document.write("<h1>Total Belanja anda : Rp."+ kasir +"<br>Selamat anda mendapatkan Diskon 70%</h1>")
+        }
+        else if(kasir < 100000 && kasir > 0){
+            document.write("<h1>Total Belanja anda : Rp."+ kasir +"<br>Yah anda belum dapat Diskon</h1>")
+        }else if(kasir == 0){
+            document.write("<h1>Total belanja anda masih 0</h1>")
+        }else{
+            document.write("Inputan salah :( <br>")
+        }
+
+        document.write("Terimakasih Sudah Berbelanja :)")
+        </script>
+</body>
+</html>
